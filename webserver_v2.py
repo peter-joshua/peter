@@ -43,6 +43,7 @@ class WebServer:
                         del self.__map[sock]
     def do_reponse(self,sock,info):
         #处理客户端请求
+        print(info)
         if info=='/':
             filename=self.html+'/index.html'
         else:
