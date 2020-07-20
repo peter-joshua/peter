@@ -45,8 +45,10 @@ class WebServer:
         #处理客户端请求
         if info=='/':
             filename=self.html+'/index.html'
+            print(filename)
         else:
             filename=self.html+info
+            print(filename)
         try:
             f=open(filename,'rb')
         except:
